@@ -1,0 +1,15 @@
+/* .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #919497;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(206, 209, 212, 0.25);
+} */
+
+.sing-up-input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}

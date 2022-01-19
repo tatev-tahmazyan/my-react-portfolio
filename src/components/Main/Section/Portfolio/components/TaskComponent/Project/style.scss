@@ -1,0 +1,11 @@
+.add-task-btn{
+    &:active{
+        transform: translate3d(4px, 4px, 0);
+    }
+}
+
+.back-btn, .back-btn:hover{
+    text-decoration: none;
+    color:#fff;
+}
+

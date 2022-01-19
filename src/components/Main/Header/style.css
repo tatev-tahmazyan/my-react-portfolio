@@ -1,0 +1,19 @@
+.project-header{
+    border-bottom: 3px solid #04c2c9;
+}
+
+.nav-item {
+    margin: 0.7rem;
+    font-size: 14pt;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+.nav-item:hover{
+    color: #d61e48;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.nav-item.active {
+    color: #d61e48;
+}

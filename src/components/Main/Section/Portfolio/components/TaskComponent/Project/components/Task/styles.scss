@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+
+.must-do-text {
+    color: #a29dae;
+    font-weight: 600;
+}
+.status-text {
+    font-size: 1rem;
+}
+.status-done {
+    color: rgb(0, 18, 182);
+}
+.status-active {
+    color: rgb(9, 255, 0);
+}
+
+.task-card{
+    min-height: 400px;
+    box-shadow: 0px 30px 40px -20px hsl(229, 6%, 66%);
+    border-radius: 12px;
+    font-family: "Poppins", sans-serif;
+    border:none;
+    border-top: 3px solid hsl(180, 62%, 55%);
+    transition: 0.5s;
+    transform-style: preserve-3d;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 8px;
+      border-radius: 50%;
+      left: 0;
+      bottom: 0px;
+      box-shadow: 0 30px 20px rgba(0, 0, 0, .3);
+    }
+  }
+ 
+  .task-card .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    transform: translateZ(50px);
+  }
+  .card-task-title{
+    text-decoration: none;
+      &:hover{
+        text-decoration: none;
+      }
+  }
+  
+  .task-card .box .content div{
+    width: 17rem;
+  }
+  .task-card .box .content h2 {
+    position: absolute;
+    top: 4%;
+    right: 8%;
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.13);
+  }
+  
+  .task-card .box .content h3 {
+    font-size: 1.8rem;
+    transition: 0.5s;
+    margin-bottom: 15px;
+  }
+ 
+  .task-card .box .content .btn-cont .btn{
+    position: relative;
+    border-radius: 5px;
+    color: white;
+    transition: 0.5s;
+  }
+  .task-card .box .content .btn-cont .btn:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    background: silver;
+    color: #3a3a3a;
+  }

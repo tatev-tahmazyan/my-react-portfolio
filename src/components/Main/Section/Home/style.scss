@@ -1,0 +1,107 @@
+.project-home-page{
+    height: calc(100vh - 4.4rem);
+
+    .shooting {
+        position: absolute;
+        width: 50px;
+        height: 1px;
+        background: linear-gradient(90deg, rgba(rgb(202, 42, 77), 1), rgba(rgb(165, 43, 73), 0));
+        background: linear-gradient(90deg, rgba(#0093E9, 1) 0%, rgba(#80D0C7, 0) 100%);
+        opacity: 0;
+        animation: shooting 5000ms linear infinite;
+
+        @for $i from 1 through 50 {
+            &:nth-child(#{$i}) {
+              top: random(70) + 0%;
+              left: random(70) + 0%;
+              animation-delay: random(9999) * 1ms;
+            }
+        }
+    }
+
+    .typing-text {
+        width: 66ch;
+        animation: typing 9s steps(66), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: monospace;
+
+        & span{
+            color: #e31b6d;
+        }
+    }
+
+    .link-portfolio{
+        border: 2px solid #04c2c9;
+        outline: none;
+        text-decoration: none;
+        color: #04c2c9;
+    }    
+}
+  
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+
+@keyframes shooting {
+    0% {
+      opacity: 0;
+      transform: rotateZ(-30deg) translateX(0) scaleX(0);
+    }
+
+    25% {
+      opacity: 1;
+      transform: rotateZ(-30deg) transalteX(-200%) scaleX(1);
+    }
+
+    50% {
+      opacity: 0;
+      transform: rotateZ(-30deg) translateX(-400%) scaleX(2);
+    }
+
+    100% {
+      opacity: 0;
+      transform: rotateZ(-30deg) translateX(-400%) scaleX(2);
+    }
+}   
+
+@media (max-width: 1200px){
+	.home-page-content{
+        & h2{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media (max-width: 1000px){
+	.home-page-content{
+        & h2{
+            font-size: 1.3rem;
+        }
+    }
+}
+
+@media (max-width: 780px){
+	.home-page-content{
+        & h2{
+            font-size: 1.2rem;
+        }
+    }
+}
+@media (max-width: 700px){
+	.home-page-content{
+        & h2{
+            font-size: 1.1rem;
+        }
+    }
+}

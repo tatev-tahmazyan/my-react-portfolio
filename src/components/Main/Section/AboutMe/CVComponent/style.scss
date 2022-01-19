@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+$text-color: #343A40;
+.cv-cont{
+    background-color: #fff;
+
+    .cv-box{
+        border:2px solid $text-color;
+    }
+    .cv-title{
+        font-family: 'Poppins', sans-serif;
+        color: #038388;
+    }
+    .left-box{
+        background-color: #e8e8e8;
+    }
+    .cv-name-logo-cont{
+        max-width: 190px;
+    
+        & img{
+            width: 100%;
+        }
+    }
+    .cv-brief-info-cont{
+        & p{
+            font-size:0.9rem
+        }
+        & span{
+            font-size:0.7rem;
+        }
+        
+    }
+    .cv-contacts{
+       & p{
+            margin-bottom: 0.7rem;
+
+            & a{
+                color:black;
+            }
+        }     
+    }
+    .cv-education,.cv-practice{
+        & p{
+            margin-bottom: 0;
+            font-weight: 500;
+        } 
+    }
+
+
+    .right-box{
+        .cv-name-lname-cont{
+            & h2{
+                font-size: 3rem;
+                font-family: 'Playfair Display', serif;
+                word-spacing: 0.4rem;
+                letter-spacing: 0.3rem;
+            }
+
+            & h6{
+                font-family: "Poppins", sans-serif;
+                font-weight: 400;
+            }
+        }
+        .cv-brief-about-me{
+            & p{
+                text-align: justify;
+                font-size: 1.1rem;
+                line-height: 1.6;
+            }
+        }
+        .cv-long-skills{
+            .progress{
+                height: 1.7rem;
+
+                & .progress-bar {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
