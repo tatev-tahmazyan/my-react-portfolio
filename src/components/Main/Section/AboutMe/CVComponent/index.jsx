@@ -89,15 +89,15 @@ const CvComponent = () => {
                                 <ProgressBar className='mb-3' variant="info" now={90} label="HTML"/>
                                 <ProgressBar className='mb-3' variant="info" now={80} label="CSS"/>
                                 <ProgressBar className='mb-3' variant="info" now={60} label="SCSS"/>
-                                <ProgressBar className='mb-3' variant="info" now={70} label="JavaScript" />
-                                <ProgressBar className='mb-3' variant="info" now={70} label="jQuery" />
-                                <ProgressBar className='mb-3' variant="info" now={60} label="React"/>
-                                <ProgressBar className='mb-3' variant="info" now={70} label="PHP" />
-                                <ProgressBar className='mb-3' variant="info" now={60} label="Laravel"/>
-                                <ProgressBar className='mb-3' variant="info" now={70} label="SQL"/>
-                                <ProgressBar className='mb-3' variant="info" now={40} label="C++"/>
-                                <ProgressBar className='mb-3' variant="info" now={50} label="Adobe Photoshop"/>
-                                <ProgressBar className='mb-3' variant="info" now={40} label="CorelDRAW"/>
+                                <ProgressBar className='mb-3' variant="info" now={60} label="JavaScript" />
+                                <ProgressBar className='mb-3' variant="info" now={60} label="jQuery" />
+                                <ProgressBar className='mb-3' variant="info" now={30} label="React"/>
+                                <ProgressBar className='mb-3' variant="info" now={60} label="PHP" />
+                                <ProgressBar className='mb-3' variant="info" now={40} label="Laravel"/>
+                                <ProgressBar className='mb-3' variant="info" now={60} label="SQL"/>
+                                <ProgressBar className='mb-3' variant="info" now={20} label="C++"/>
+                                <ProgressBar className='mb-3' variant="info" now={40} label="Adobe Photoshop"/>
+                                <ProgressBar className='mb-3' variant="info" now={30} label="CorelDRAW"/>
                             </div>
 
                         </div>
